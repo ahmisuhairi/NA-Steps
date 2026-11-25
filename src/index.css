@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  :root {
+    --paper-bg: #fbf9f5;
+    --paper-surface: #f4efe6;
+    --paper-card: #fffdf9;
+    --paper-border: #e3dacb;
+    --ink-primary: #1c1917;
+    --ink-secondary: #57534e;
+    --ink-muted: #78716c;
+    --accent-lapis: #1e3a8a;
+    --accent-lapis-hover: #172554;
+    --accent-forest: #14532d;
+    --accent-bronze: #78350f;
+  }
+
+  html {
+    background-color: var(--paper-bg);
+    color: var(--ink-primary);
+    font-family: var(--font-serif);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--paper-bg);
+    color: var(--ink-primary);
+  }
+
+  ::selection {
+    background-color: rgba(30, 58, 138, 0.14);
+    color: #1c1917;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent-lapis);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

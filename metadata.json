@@ -1,0 +1,6 @@
+{
+  "name": "Leksikon It Works",
+  "description": "Kamus dwibahasa (Inggeris & Bahasa Melayu) untuk buku It Works: How and Why berserta carian penuh PDF dan penjana kod Google Apps Script siap guna.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
